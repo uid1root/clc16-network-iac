@@ -1,17 +1,10 @@
-#Exemplo 1
-variable "vpc_name" {
-  description = "nome da vpc"
-  type = string
-  default = "teste-alteracao"
-}
-
 resource "aws_vpc" "clc_vpc" {
   cidr_block       = "172.16.0.0/16"
   instance_tenancy = "default"
 
   tags = {
     #Name = "vpc_terraform_tf"
-    Name = "${var.vpc_name}"
+    Name = "cicd-terraform-vpc"
   }
 }
 
