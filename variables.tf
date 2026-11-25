@@ -1,11 +1,11 @@
 variable "env" {
     type = string
-    default = "hml"
+    default = "prd"
 }
 
 variable "vpc_name" {
     type = string
-    default = "terraform-vpc"
+    default = "vinicius-tf"
 }
 
 variable "pub_subnet_1a_name" {
